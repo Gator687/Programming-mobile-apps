@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.sportsnavigation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.sportsnavigation.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.sportsnavigation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.example.sportsnavigation.sportsFragment"
+        android:label="fragment_sports"
+        tools:layout="@layout/fragment_sports" >
+        <action
+            android:id="@+id/action_sportsFragment_to_footballFragment"
+            app:destination="@id/footballFragment" />
+        <action
+            android:id="@+id/action_sportsFragment_to_baseballFragment"
+            app:destination="@id/baseballFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/footballFragment"
+        android:name="com.example.sportsnavigation.FootballFragment"
+        android:label="fragment_football"
+        tools:layout="@layout/fragment_football" />
+    <fragment
+        android:id="@+id/baseballFragment"
+        android:name="com.example.sportsnavigation.BaseballFragment"
+        android:label="fragment_baseball"
+        tools:layout="@layout/fragment_baseball" />
+</navigation>

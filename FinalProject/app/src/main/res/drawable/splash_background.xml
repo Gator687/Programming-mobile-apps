@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- splash_background.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Define the shape and properties of the background -->
+        <solid android:color="#800080" /> <!-- Set the background color -->
+        <corners android:radius="0dp" /> <!-- Set the corner radius -->
+    </shape>
+</selector>

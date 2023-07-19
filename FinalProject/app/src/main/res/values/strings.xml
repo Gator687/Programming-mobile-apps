@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="menu_item_icon_description">This is the menu item icon for the resturant\n</string>
+    <string name="food_item_image_description">This is an image of the food that Mr.Food sells\n</string>
+</resources>
